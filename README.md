@@ -1,29 +1,19 @@
-# react-native-audioplayer
+# react-native-audio-player
 
-Small audio player library for react native
+Audio player library for react native Android
 
 ##Installation
 
-First you need to install react-native-audioplayer:
-
 ```javascript
-npm install react-native-audioplayer --save
+npm install react-native-audio-player --save
 ```
-
-### Installation (iOS)
-
-In XCode, in the project navigator, right click Libraries ➜ Add Files to [your project's name] ➜ Go to node_modules ➜ react-native-audioplayer and add the .xcodeproj file
-
-In XCode, in the project navigator, select your project. Add the lib*.a from the audioplayer project to your project's Build Phases ➜ Link Binary With Libraries. Then, click on the .xcodeproj file you added before in the project navigator, and go the Build Settings tab. Make sure 'All' is toggled on (instead of 'Basic'). Look for Header Search Paths and make sure it contains both $(SRCROOT)/../react-native/React and $(SRCROOT)/../../React - mark both as recursive.
-
-### Installation (Android)
 
 * In `android/settings.gradle`
 
 ```gradle
 ...
 include ':RNAudioPlayer', ':app'
-project(':RNAudioPlayer').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-audioplayer/android')
+project(':RNAudioPlayer').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-audio-player/android')
 ```
 
 * In `android/app/build.gradle`
@@ -39,7 +29,7 @@ dependencies {
 * Register the module (in MainActivity.java)
 
 ```java
-import com.sh3rawi.RNAudioPlayer.*; // <--- import
+import com.tricy.RNAudioPlayer.*; // <--- import
 
 public class MainActivity extends Activity implements DefaultHardwareBackBtnHandler {
   ...
@@ -59,28 +49,16 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 
 ## Usage
 
-### Usage (iOS)
-
-First add a short sound file to your project. In XCode, in the project navigator, right click your project ➜ Add Files to [your project's name] and add the sound file.
-
-### Usage (Android)
-
-Put your audio resources in '[project_root]/android/app/src/main/res/raw'
-
-The AudioPlayer API is exposed at AudioPlayer.play(soundName). The sound is played asynchronous so this method will return immediately.
-
-### Note on Usage
-
-There is a difference between the two platforms' handling of resources, whereas when passing to iOS the file name with the extension must be passed ('beep.mp3'), Android requires only the name ('beep'). That is why the JS module removes the extension part (anything after the last dot in name) before calling the java module.
+Put audio resources in `[project_root]/android/app/src/main/res/raw`
 
 ### Example
 
 ```javascript
 
 //require module
-var AudioPlayer = require('react-native-audioplayer');
+var AudioPlayer = require('react-native-audio-player');
 
 //play sound
-AudioPlayer.play('beep.mp3');
+AudioPlayer.play('hello.mp3');
 
 ```
