@@ -1,0 +1,31 @@
+{
+  "name": "react-native-audio-player",
+  "version": "0.1.0",
+  "description": "Audio player library for react native Android",
+  "main": "AudioPlayer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MarkfiveLab/react-native-audio-player.git"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "android",
+    "audioplayer",
+    "audio",
+    "player"
+  ],
+  "author": {
+    "name": "Tricy Inc.",
+    "email": "hi@tricy.io",
+    "url": "https://tricy.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarkfiveLab/react-native-audio-player/issues"
+  },
+  "homepage": "https://github.com/MarkfiveLab/react-native-audio-player#readme"
+}
