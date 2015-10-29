@@ -24,7 +24,7 @@
     "url": "https://github.com/Tricy/react-native-audio-manager/issues"
   },
   "homepage": "https://github.com/Tricy/react-native-audio-manager#readme",
-  "dependencies": {
-    "react-native": "^0.12.0"
+  "peerDependencies": {
+    "react-native": ">=0.5"
   }
 }
