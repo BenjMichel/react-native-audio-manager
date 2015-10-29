@@ -16,7 +16,8 @@
     "android",
     "audioplayer",
     "audio",
-    "player"
+    "player",
+    "manager"
   ],
   "author": "Tricy Inc. <hi@tricy.io> (https://tricy.io)",
   "license": "MIT",
