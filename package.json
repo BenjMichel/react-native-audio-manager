@@ -18,11 +18,7 @@
     "audio",
     "player"
   ],
-  "author": {
-    "name": "Tricy Inc.",
-    "email": "hi@tricy.io",
-    "url": "https://tricy.io"
-  },
+  "author": "Tricy Inc. <hi@tricy.io> (https://tricy.io)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/MarkfiveLab/react-native-audio-player/issues"
