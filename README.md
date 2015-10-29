@@ -1,11 +1,11 @@
-# react-native-audio-player
+# react-native-audio-manager
 
-Audio player library for react native Android
+Audio manager library for react native Android
 
 ##Installation
 
 ```javascript
-npm install react-native-audio-player --save
+npm install react-native-audio-manager --save
 ```
 
 * In `android/settings.gradle`
@@ -13,7 +13,7 @@ npm install react-native-audio-player --save
 ```gradle
 ...
 include ':RNAudioPlayer', ':app'
-project(':RNAudioPlayer').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-audio-player/android')
+project(':RNAudioPlayer').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-audio-manager/android')
 ```
 
 * In `android/app/build.gradle`
@@ -56,7 +56,7 @@ Put audio resources in `[project_root]/android/app/src/main/res/raw`
 ```javascript
 
 //require module
-var AudioPlayer = require('react-native-audio-player');
+var AudioPlayer = require('react-native-audio-manager');
 
 //play sound
 AudioPlayer.play('hello.mp3');
