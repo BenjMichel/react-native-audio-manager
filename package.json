@@ -1,6 +1,6 @@
 {
   "name": "react-native-audio-manager",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Audio player library for react native Android",
   "main": "AudioPlayer.js",
   "scripts": {
