@@ -53,12 +53,31 @@ Put audio resources in `[project_root]/android/app/src/main/res/raw`
 
 ### Example
 
+File: `[project_root]/android/app/src/main/res/raw/hello.mp3`
+
 ```javascript
 
 //require module
 var AudioPlayer = require('react-native-audio-manager');
 
 //play sound
-AudioPlayer.play('hello.mp3');
+AudioPlayer.play('hello');
+
+//play sound with loop
+AudioPlayer.playWithLoop('hello');
+
+//stop sound
+AudioPlayer.stop('hello');
+
+//pause sound
+AudioPlayer.pause('hello');
+
+//increase sound volume
+AudioPlayer.increaseVolume('hello');
+
+//decrease sound volume
+AudioPlayer.decreaseVolume('hello');
+
+
 
 ```
