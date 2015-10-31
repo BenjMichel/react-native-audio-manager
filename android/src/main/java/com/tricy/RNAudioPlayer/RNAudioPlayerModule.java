@@ -6,6 +6,7 @@ import java.lang.Exception;
 
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.net.Uri;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -39,9 +40,9 @@ public class RNAudioPlayerModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void prepare(String audio) {
     String fname = audio.toLowerCase();
-    int resID = this.reactContext.getResources().getIdentifier(fname, "raw", this.reactContext.getPackageName());
+    Uri uri = Uri.parse(audio);
     try {
-      mp = MediaPlayer.create(this.reactContext, resID);
+      mp = MediaPlayer.create(this.reactContext, uri);
       sounds.put(audio, mp);
       soundVolumes.put(audio, (float) 1.0);
     } catch(Exception e) {
